@@ -4,7 +4,7 @@
   "description": "Premium full-stack blogging platform with user registration, posts CRUD, comments, and sleek glassmorphism UI.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node seed.js && node server.js",
     "dev": "node server.js"
   },
   "dependencies": {
