@@ -1,0 +1,20 @@
+{
+  "name": "blog-platform",
+  "version": "1.0.0",
+  "description": "Premium full-stack blogging platform with user registration, posts CRUD, comments, and sleek glassmorphism UI.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "private": true
+}

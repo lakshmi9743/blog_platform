@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether - Premium Blog & Conversation Space</title>
+  <!-- SEO & Meta -->
+  <meta name="description" content="Aether is a high-fidelity premium blogging space. Create posts, interact with readers, and express thoughts in a gorgeous glassmorphic environment.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Atmospheric Neon Glow Nodes in Background -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+
+  <!-- Main Navigation Frame -->
+  <header class="glass-header" id="navbar-container"></header>
+
+  <!-- Notification Banner Center -->
+  <div id="notification-center" class="notification-center"></div>
+
+  <!-- Primary Dynamic Content Mount -->
+  <main id="app-viewport" class="app-viewport container fade-in-up"></main>
+
+  <!-- Full-Screen Auth Overlay / Modal -->
+  <div id="auth-modal" class="auth-modal hidden">
+    <div class="auth-glass-card fade-scale">
+      <button class="close-auth-btn" id="close-auth-btn">&times;</button>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login">Login</button>
+        <button class="auth-tab" id="tab-signup">Sign Up</button>
+      </div>
+      
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form">
+        <h2 class="auth-title">Welcome Back</h2>
+        <p class="auth-subtitle">Enter your details to log in to Aether</p>
+        <div class="form-group">
+          <label for="login-user">Username or Email</label>
+          <input type="text" id="login-user" required autocomplete="username" placeholder="e.g. readerglow">
+        </div>
+        <div class="form-group">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" required autocomplete="current-password" placeholder="••••••••">
+        </div>
+        <button type="submit" class="glow-button auth-submit-btn">Authorize Session</button>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="auth-form hidden">
+        <h2 class="auth-title">Create Account</h2>
+        <p class="auth-subtitle">Join Aether and start sharing your stories</p>
+        <div class="form-group">
+          <label for="signup-user">Username</label>
+          <input type="text" id="signup-user" required autocomplete="username" placeholder="e.g. storyteller">
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" required autocomplete="email" placeholder="e.g. you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="signup-pass">Password</label>
+          <input type="password" id="signup-pass" required autocomplete="new-password" placeholder="At least 6 characters">
+        </div>
+        <button type="submit" class="glow-button auth-submit-btn">Register Identity</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Core Javascript Modules -->
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/components.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
